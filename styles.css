@@ -8,9 +8,12 @@
     font-family: "Montserrat", sans-serif; /* Fonte*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url(aura-logo.png);
-    background-size: 50%;
+    background-size: 20%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -51,7 +54,7 @@ header ul {
 }
 /*Configurações dos nomes dos participantes*/
 header li {
-    color: rgba(31, 31, 31);
+    color: rgb(0, 0, 0);
     margin-top: 35px;
     margin-left: 14px;
     font-size: 14px;
@@ -60,7 +63,7 @@ header li {
 header li:hover {
     font-size: 17px;
     transition: font-size 0.3s ease;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 /*Menu "Home", "Galeria"e"Cadastro"*/
 
@@ -70,33 +73,34 @@ header nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(31, 31, 31);
+    color: rgb(0, 0, 0);
     margin-left: 80px;
 }
 
 main {
     padding-top: 120px;
     margin-bottom: 50px;
-
+    gap: 500px;
 }
+
 
 .integrantes  {
     position: relative; 
-    overflow: hidden;
+    margin-right: 900px;
 }
 
 .integrantes img {
     margin-top: 10px;
     margin-left: 30px;
-    width: 200px;
+    width: 220px;
     border-radius: 30px;
     border: 3px solid rgb(0, 0, 0);
     transition: 0.5s ease;
-
+    margin-bottom: 20px;
 }
 
 .integrantes:hover img {
-    width: 250px;
+    width: 300px;
     transition: 0.5s ease;
 }
 
@@ -104,13 +108,15 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 230px;
-    width: 280px;
-    font-size: 19px;
+    height: 250px;
+    width: 320px;
+    font-size: 17px;
     transform: translateX(0);
     transition: transform 0.8s ease;
-    padding: 10px;
+    padding: 1px;
+    margin-left: 20px;
     visibility: hidden;
+    color: red;
 }
 
 .integrantes:hover .descricao {
@@ -119,5 +125,15 @@ main {
 }
 
 footer {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    display: inline;
+    border-radius: 100px;
+    width: 100px;
 }
