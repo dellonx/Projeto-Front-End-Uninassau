@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 
 * {
     box-sizing: border-box;
@@ -8,9 +8,16 @@
     font-family: "Montserrat", sans-serif; /* Fonte*/
 }
 
+body {
+    background-image: url(aura-logo.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 header {
-   /* position: fixed; */ 
-    background-color: white;
+   position: fixed;
     height: 100px;
     width: 1300px;
     border: 3px solid black;
@@ -18,7 +25,8 @@ header {
     display: flex;
     border-radius: 80px;
     margin-top: 20px; /*Margem pra não encostar em cima*/
-
+    z-index: 10;
+    background-color: white;
 }
 
 header section {
@@ -66,39 +74,50 @@ nav a {
     margin-left: 80px;
 }
 
+main {
+    padding-top: 120px;
+    margin-bottom: 50px;
+
+}
+
 .integrantes  {
     position: relative; 
     overflow: hidden;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 100px;
 }
 
 .integrantes img {
-    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 200px;
     border-radius: 30px;
     border: 3px solid rgb(0, 0, 0);
+    transition: 0.5s ease;
 
 }
 
 .integrantes:hover img {
-    width: 300px;
+    width: 250px;
     transition: 0.5s ease;
 }
 
 .integrantes .descricao {
     position: absolute;
-    color: red;
     bottom: 0;
     left: 0;
-    height: 250px;
-    width: 300px;
-    background-color: black;
+    height: 230px;
+    width: 280px;
+    font-size: 19px;
     transform: translateX(0);
-    transition: transform 0.9s ease;
+    transition: transform 0.8s ease;
     padding: 10px;
+    visibility: hidden;
 }
 
 .integrantes:hover .descricao {
+    visibility: visible;
     transform: translateX(100%);
+}
+
+footer {
+    background-color: grey;
 }
