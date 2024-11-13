@@ -13,7 +13,7 @@ html {
 }
 body {
     background-image: url(aura-logo.png);
-    background-size: 20%;
+    background-size: 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -86,7 +86,7 @@ main {
 
 .integrantes  {
     position: relative; 
-    margin-right: 900px;
+    margin-right: 1000px;
 }
 
 .integrantes img {
@@ -108,9 +108,9 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 250px;
-    width: 320px;
-    font-size: 17px;
+    height: 300px;
+    width: 500px;
+    font-size: 20px;
     transform: translateX(0);
     transition: transform 0.8s ease;
     padding: 1px;
@@ -121,7 +121,7 @@ main {
 
 .integrantes:hover .descricao {
     visibility: visible;
-    transform: translateX(100%);
+    transform: translateX(65%);
 }
 
 footer {
