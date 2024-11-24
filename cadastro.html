@@ -7,30 +7,85 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <!--Código Principal-->
+    <!--Código Cabeçalho-->
     <header>
         <section>
             <img src="cabeca-logo.png" alt="Logo com imagem de um rosto">
             <img src="aura-logo.png" alt="Logo com o texto Aura">
-            <ul>
-                <li>Allan Dellon</li>
-                <li>Lucas Gomes</li>
-                <li>Luiz Henrique</li>
-                <li>Aquiles De Melo</li>
-                <li>Vinicius Barbosa</li>
-            </ul>
             <nav>
                 <ul>
-                    <li><a href="main.html">Home</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="main.html">Quem Somos?</a></li>
+                    <li><a href="galeria.html">Nossos</a></li>
+                    <li><a href="cadastro.html">Saiba Mais</a></li>
                 </ul>
             </nav>
         </section>
     </header>
     <!--Código Principal-->
-    <main>
+    <main class="principal-cadastro">
+        <div class="container-cadastro">
+            <section class="header">
+                <h2>Criar Conta</h2>
+            </section>
 
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Nome do usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu nome">
+                    <a href="">Mensagem de erro</a>
+                </div>
+            </form>
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email">
+                    <a href="">Mensagem de erro</a>
+                </div>
+            </form>
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="passaword">Senha</label>
+                    <input type="password" id="passaword" placeholder="Digite sua senha">
+                    <a href="">Mensagem de erro</a>
+                </div>
+            </form>
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="passaword-confirmation">Confirme sua senha</label>
+                    <input type="password" id="passaword-confirmation" placeholder="Digite sua senha">
+                    <a href="">Mensagem de erro</a>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+        </div>
+        <div class="container-comentario">
+            <section class="header">
+                <h2>Comentário</h2>
+            </section>
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Nome do usuário</label>
+                    <input type="text" 
+                    id="username" 
+                    placeholder="Digite seu nome">
+                </div>
+            </form>
+
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="comment">Digite seu Comentário</label>
+                    <input type="comment" id="comment" placeholder="Digite seu Comentário...">
+                </div>
+                    <button id="botao-enviar" type="submit">Enviar</button>
+            </form>
+
+        </div>
     </main>
     <!--Código Do Rodapé-->
     <footer>
@@ -40,5 +95,6 @@
             <img src="aura-logo.png" alt="">
         </section>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
