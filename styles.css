@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #F4F4F9;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     display: flex;
     border-radius: 30px;
     z-index: 1;
-    background-color: white;
 }
 
 .off-screen-menu {
@@ -99,6 +99,7 @@ nav {
 
 header section {
     display: flex;
+
 }
 
 /*Configurações da imagem-logo*/
@@ -227,7 +228,7 @@ footer img {
 }
 
 .header{
-    background: linear-gradient(to left, #fffb00 0%, #ad00fd 100%);
+    background: linear-gradient(to left, #390f86 0%, #000000 100%);
     padding: 24px;
     text-align: center;
     color: white;
@@ -253,7 +254,7 @@ footer img {
     width: 100%;
     border-radius: 8px;
     padding: 8px;
-    border: 2px solid rgba(36, 34, 34, 0.863);
+    border: 2px solid rgba(0, 0, 0, 0.863);
 }
 
 .form-content a {
@@ -264,7 +265,7 @@ footer img {
 }
 
 .form button {
-    background: linear-gradient(to left, #fffb00 0%, #ad00fd 100%);
+    background: linear-gradient(to left, #22097c 0%, #000000 100%);
     color: white;
     width: 90%;
     margin-left: 15px;
