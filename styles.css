@@ -23,7 +23,99 @@ header {
     display: flex;
     border-radius: 30px;
     z-index: 1;
+    background-color: #F4F4F9;
 }
+
+header section {
+    display: flex;
+}
+
+/*Configurações da imagem-logo*/
+header img {
+    width: 85px;
+    height: 80px;
+    display: inline;
+    cursor: pointer;
+    margin: 7px;
+    border-radius: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+/*Configurações dos nomes dos participantes*/
+header li {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+/*Destaque quando passar o mouse*/
+header li:hover {
+    cursor: pointer;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+    color: rgba(10, 8, 150, 0.911);
+}
+/*Menu "Home", "Galeria"e"Cadastro"*/
+
+header nav {
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 80px;
+}
+
+main {
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+.integrantes {
+    position: relative;
+    flex-wrap: wrap;
+    margin-right: 65%;
+}
+
+.integrantes img {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 180px;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid rgba(26, 13, 143, 0.863);
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.integrantes:hover img {
+    width: 220px;
+    height: 300px;
+    transition: 0.5s ease;
+}
+
+.integrantes .descricao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 400px;
+    font-size: 16px;
+    transform: translateX(0);
+    transition: transform 0.8s ease;
+    padding: 1px;
+    margin-left: 10px;
+    visibility: hidden;
+    color: rgba(0, 0, 0, 0.966);
+}
+
+.integrantes:hover .descricao {
+    visibility: visible;
+    transform: translateX(65%);
+}
+
 
 .off-screen-menu {
     height: 0;
@@ -97,100 +189,8 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-header section {
-    display: flex;
-
-}
-
-/*Configurações da imagem-logo*/
-header img {
-    width: 85px;
-    height: 80px;
-    display: inline;
-    cursor: pointer;
-    margin: 7px;
-    border-radius: 50px;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-}
-/*Configurações dos nomes dos participantes*/
-header li {
-    margin-top: 30px;
-    margin-right: 14px;
-    font-size: 16px;
-}
-/*Destaque quando passar o mouse*/
-header li:hover {
-    cursor: pointer;
-    font-size: 18px;
-    transition: font-size 0.3s ease;
-    color: rgba(204, 17, 17, 0.911);
-}
-/*Menu "Home", "Galeria"e"Cadastro"*/
-
-header nav {
-    margin-left: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin-left: 80px;
-}
-
-main {
-    padding-top: 120px;
-    margin-bottom: 50px;
-    gap: 500px;
-}
-
-
-.integrantes-1  {
-    display: inline;
-}
-
-.integrantes-1 img {
-    margin-top: 10px;
-    margin-left: 30px;
-    width: 175px;
-    height: 250px;
-    border-radius: 30px;
-    border: 2px solid rgba(255, 217, 0, 0.863);
-    transition: 0.5s ease;
-    margin-bottom: 20px;
-}
-
-.integrantes-1:hover img {
-    width: 200px;
-    height: 280px;
-    transition: 0.5s ease;
-}
-
-.integrantes-1 .descricao {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 250px;
-    width: 380px;
-    font-size: 16px;
-    transform: translateX(0);
-    transition: transform 0.8s ease;
-    padding: 1px;
-    margin-left: 10px;
-    visibility: hidden;
-    color: rgba(103, 8, 122, 0.966);
-}
-
-.integrantes-1:hover .descricao {
-    visibility: visible;
-    transform: translateX(65%);
-}
-
 footer {
-    background-color: rgb(255, 255, 255);
+    background-color: #F4F4F9;
 }
 
 footer {
@@ -283,7 +283,6 @@ footer img {
 .form-content.error a {
     border-color: red;   
 }
-
 
 .container-comentario {
     background-color: white;
