@@ -29,6 +29,30 @@ header section {
     display: flex;
 }
 
+header.dark-mode {
+    background-color: #1e1e1e;  /* Cor escura para o cabeçalho */
+    border: 3px solid white;     /* Borda branca no modo escuro */
+}
+
+body.dark-mode .descricao {
+    color: white;
+}
+body.dark-mode .titulo {
+    color: white;
+}
+
+header.dark-mode .ham-menu span {
+    background-color: white; 
+}
+
+header.dark-mode ul li {
+    color: white; 
+}
+
+header.dark-mode nav a {
+    color: white;
+}
+
 /*Configurações da imagem-logo*/
 header img {
     width: 85px;
@@ -144,6 +168,7 @@ main {
     transform: translateX(65%);
 }
 
+/* Estilização do button*/
 .mostrarTexto {
     background-color: #0c73e7;
     color: white; 
@@ -173,6 +198,7 @@ main {
     background-color: #0a15b1; 
 }
 
+/*Final da Estilização do Button*/
 
 .off-screen-menu {
     height: 0;
@@ -257,7 +283,8 @@ nav {
 
 .principal-cadastro {
     width: 100%;
-    min-height: 100vh;
+    height: 650px;
+    display: flex;
 }
 
 
@@ -322,8 +349,9 @@ nav {
     cursor: pointer;
 }
 
+/*Código Cadastro*/
+
 .container-comentario {
-    background-color: white;
     border-radius: 20px;
     margin: 14px;
     max-width: 600px;
@@ -333,6 +361,11 @@ nav {
     text-align: center;
 }
 
+textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+}
 /* Exibir mensagens de erro quando a classe "error" estiver presente */
 .form-content.error .error-message {
     visibility: visible;
