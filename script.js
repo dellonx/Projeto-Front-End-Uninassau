@@ -8,8 +8,7 @@ hamMenu.addEventListener('click', () => {
 });
 
 // 
-// Seleciona os elementos
-// Seleciona todos os botões e textos
+// Código Saiba Mais
 const botoes = document.querySelectorAll('.mostrarTexto'); // Seleciona todos os botões
 const textos = document.querySelectorAll('.texto'); // Seleciona todos os textos
 
