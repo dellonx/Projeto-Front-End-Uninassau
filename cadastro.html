@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 <body>
-    <!--Código Cabeçalho-->
-    <!--Código Principal-->
+    <!-- Cabeçalho -->
     <header>
         <section>
             <img src="cabeca-logo.png" alt="">
@@ -29,73 +29,67 @@
             </nav>
         </section>
     </header>
-    <!--Código Principal-->
+
+    <!-- Seção Principal -->
     <main class="principal-cadastro">
         <div class="container-cadastro">
             <section class="header">
                 <h2>Criar Conta</h2>
             </section>
 
-            <form id="form" class="form">
+            <!-- Formulário de Cadastro -->
+            <form id="form-cadastro" class="form">
                 <div class="form-content">
                     <label for="username">Nome do usuário</label>
-                    <input type="text" id="username" placeholder="Digite seu nome">
+                    <input type="text" id="username" placeholder="Digite seu nome" required>
                     <a href="">Mensagem de erro</a>
                 </div>
-            </form>
-
-            <form id="form" class="form">
                 <div class="form-content">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email">
+                    <input type="email" id="email" placeholder="Digite seu email" required>
                     <a href="">Mensagem de erro</a>
                 </div>
-            </form>
-
-            <form id="form" class="form">
                 <div class="form-content">
-                    <label for="passaword">Senha</label>
-                    <input type="password" id="passaword" placeholder="Digite sua senha">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                    <div>
+                        <label for="botaoMostrarSenha" class="legenda">Mostrar Senha</label>
+                        <input type="checkbox" id="botaoMostrarSenha" required>
+                    </div>
                     <a href="">Mensagem de erro</a>
                 </div>
-            </form>
-
-            <form id="form" class="form">
                 <div class="form-content">
-                    <label for="passaword-confirmation">Confirme sua senha</label>
-                    <input type="password" id="passaword-confirmation" placeholder="Digite sua senha">
+                    <label for="password-confirmation">Confirme sua senha</label>
+                    <input type="password" id="password-confirmation" placeholder="Digite sua senha" required>
                     <a href="">Mensagem de erro</a>
                 </div>
-
                 <button type="submit">Cadastrar</button>
             </form>
-
         </div>
-        <div class="container-comentario">
-            <section class="header">
-                <h2>Comentário</h2>
-            </section>
+        <!-- Código Comentário -->
+    <div class="container-comentario">
+        <section class="header">
+            <h2>Comentário</h2>
+        </section>
 
-            <form id="form" class="form">
-                <div class="form-content">
-                    <label for="username">Nome do usuário</label>
-                    <input type="text" 
-                    id="username" 
-                    placeholder="Digite seu nome">
-                </div>
-            </form>
+        <form id="form" class="form">
+            <div class="form-content">
+                <label for="username">Nome do usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome" required>
+            </div>
+        </form>
 
-            <form id="form" class="form">
-                <div class="form-content">
-                    <label for="comment">Digite seu Comentário</label>
-                    <input type="comment" id="comment" placeholder="Digite seu Comentário...">
-                </div>
-                    <button id="botao-enviar" type="submit">Enviar</button>
-            </form>
-
-        </div>
+        <form id="form" class="form">
+            <div class="form-content">
+                <label for="comment">Digite seu Comentário</label>
+                <input type="comment" id="comment" placeholder="Digite seu Comentário..." required>
+            </div>
+            <button id="botao-enviar" type="submit">Enviar</button>
+        </form>
+    </div>
     </main>
-    <!--Código Do Rodapé-->
+
+    <!-- Rodapé -->
     <footer>
         <section>
             <p>Developed by</p>
@@ -103,6 +97,7 @@
             <img src="aura-logo.png" alt="">
         </section>
     </footer>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
